@@ -69,10 +69,13 @@ class TicTacToe
     input = gets.strip
     if input.to_i == 1
       human_vs_human
+
     elsif input.to_i == 2
       human_vs_computer
+
     elsif input.to_i == 3
       computer_vs_computer
+
     else
       puts "Invalid Number"
       new_game
@@ -80,7 +83,6 @@ class TicTacToe
   end
 
   def turn
-    display_board
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
